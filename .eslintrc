@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "prefer-const": "warn",
+    "indent": [
+      "warn",
+      2
+    ],
+    "max-len": [
+      "warn",
+      120
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "unknown",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ]
+      }
+    ],
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      {
+        "propElementValues": "always"
+      }
+    ],
+    "react/jsx-key": [
+      "error",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": true
+      }
+    ],
+    "react/no-array-index-key": "error"
+  }
+}
